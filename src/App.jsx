@@ -7,7 +7,7 @@ import Main from './pages/main/Main'
 import Referans from './pages/refesans/Referans'
 import Surec from './pages/surec/Surec'
 import Uzmanlık from './pages/uzmanlık/Uzmanlık'
-import Yorumlar from './pages/yorumlar/yorumlar'
+import Yorumlar from './pages/yorumlar/Yorumlar'
 import News from './pages/news/News'
 
 function App() {
