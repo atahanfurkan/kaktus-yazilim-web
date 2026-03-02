@@ -1,7 +1,7 @@
 import React from 'react';
 import './Uzmanlık.css';
 import { FiLayout, FiSearch, FiGlobe, FiCpu, FiShoppingCart, FiSettings, FiArrowRight } from 'react-icons/fi';
-
+ 
 const Uzmanlık = () => {
   const hizmetler = [
     {
