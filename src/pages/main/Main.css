@@ -1,0 +1,367 @@
+
+.sayfa-arka-plan {
+  width: 100%;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.genis-banner-kart {
+  width: 94%;
+  max-width: 1700px; 
+  background: white;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+
+.banner-govde-genis {
+  background: #004d26; 
+  color: white;
+  padding: 80px 100px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.banner-sol-icerik { flex: 1.2; }
+.banner-sag-gorsel { flex: 0.8; display: flex; justify-content: flex-end; }
+
+.one-cikan-badge {
+  background: #00c853;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.dev-baslik {
+  font-size: 52px; 
+  margin: 30px 0;
+  font-weight: 800;
+  line-height: 1.1;
+  max-width: 800px;
+}
+
+.banner-spot-metin {
+  font-size: 18px;
+  opacity: 0.85;
+  margin-bottom: 50px;
+  max-width: 650px;
+  line-height: 1.6;
+}
+
+.cihaz-mockup-sarma {
+  position: relative;
+  width: 100%;
+  max-width: 550px;
+}
+
+.mockup-resim {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.3));
+  transition: transform 0.5s ease;
+}
+
+.mockup-resim:hover {
+  transform: scale(1.02);
+}
+
+.gorsel-isik-efekti {
+  position: absolute;
+  top: -20%;
+  left: -20%;
+  width: 140%;
+  height: 140%;
+  background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.banner-alt-serit {
+  background: #ffffff;
+  border-bottom: 1px solid #f1f5f9;
+  padding: 25px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.serit-sol-linkler {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.serit-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #064e3b;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.serit-link:hover {
+  color: #00c853;
+}
+
+.serit-sag-destek {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.destek-yazisi {
+  font-size: 16px;
+  font-weight: 600;
+  color: #064e3b;
+}
+
+.destek-butonu {
+  background-color: #00c853;
+  color: #fff;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.destek-butonu:hover {
+  background-color: #076336;
+}
+
+
+.deger-onerisi-alani {
+  background: #ffffff;
+  padding: 60px 100px;
+}
+
+.alt-bolum-baslik {
+  font-size: 32px;
+  color: #064e3b;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.alt-bolum-aciklama {
+  font-size: 18px;
+  color: #64748b;
+  max-width: 850px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.istatistik-sarma {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.mini-istatistik-kutusu {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background: #f8fafc;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.mini-istatistik-kutusu:hover {
+  background: #e0f2e9;
+}
+
+.ist-ikon {
+  font-size: 28px;
+  color: #00c853;
+}
+
+.ist-rakam {
+  display: block;
+  font-size: 20px;
+  font-weight: 800;
+  color: #064e3b;
+}
+
+.ist-etiket {
+  display: block;
+  font-size: 14px;
+  color: #64748b;
+}
+
+
+.interaktif-aksiyonlar {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.ana-teklif-butonu {
+  background-color: #00c853;
+  color: #fff;
+  border: none;
+  padding: 15px 35px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 800;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.ana-teklif-butonu:hover {
+  background-color: #076336;
+  transform: translateY(-3px);
+}
+
+.etiket-grubu-yatay {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.etiket-ust-yazi {
+  font-size: 12px;
+  color: #e0f2e9;
+  font-weight: 700;
+}
+
+.etiket-listesi {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.etiket-listesi span {
+  background: #064e3b;
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.etiket-listesi span:hover {
+  background: #00c853;
+}
+
+.dik-ayirici {
+  width: 1px;
+  height: 40px;
+  background-color: rgba(255,255,255,0.5);
+}
+
+
+@media (max-width: 1024px) {
+  .banner-govde-genis {
+    flex-direction: column;
+    padding: 70px 60px;
+    text-align: center;
+  }
+
+  .banner-sag-gorsel {
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .dev-baslik {
+    font-size: 42px;
+  }
+
+  .banner-alt-serit {
+    flex-direction: column;
+    padding: 25px 60px;
+    text-align: center;
+  }
+
+  .serit-sol-linkler {
+    justify-content: center;
+  }
+
+  .deger-onerisi-alani {
+    padding: 60px;
+  }
+
+  .istatistik-sarma {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-govde-genis {
+    padding: 60px 30px;
+  }
+
+  .dev-baslik {
+    font-size: 34px;
+  }
+
+  .banner-spot-metin {
+    font-size: 16px;
+  }
+
+  .interaktif-aksiyonlar {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .dik-ayirici {
+    display: none;
+  }
+
+  .etiket-listesi {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .banner-alt-serit {
+    padding: 25px 30px;
+  }
+
+  .deger-onerisi-alani {
+    padding: 50px 30px;
+  }
+
+  .istatistik-sarma {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .dev-baslik {
+    font-size: 28px;
+  }
+
+  .one-cikan-badge {
+    font-size: 10px;
+  }
+
+  .ana-teklif-butonu {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .destek-butonu {
+    width: 100%;
+  }
+
+  .serit-sag-destek {
+    flex-direction: column;
+  }
+}

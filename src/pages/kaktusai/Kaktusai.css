@@ -1,0 +1,201 @@
+.kaktusai-alani {
+  width: 100%;
+  padding: 120px 0;
+  background-color: #fcfdfe;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.kaktusai-konteynir {
+  width: 94%;
+  max-width: 1700px;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.kaktusai-gorsel-taraf {
+  position: relative;
+}
+
+.ai-gorsel-cerceve {
+  width: 100%;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0, 77, 38, 0.12);
+  position: relative;
+}
+
+.ai-ana-resim {
+  width: 100%;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.ai-gorsel-cerceve:hover .ai-ana-resim {
+  transform: scale(1.03);
+}
+
+.ai-hareketli-kart {
+  position: absolute;
+  bottom: 30px;
+  right: -20px;
+  background: #004d26;
+  color: #00c853;
+  padding: 14px 22px;
+  border-radius: 15px;
+  font-weight: 800;
+  font-size: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  animation: float 3s infinite ease-in-out;
+  white-space: nowrap;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+
+.ai-ust-etiket {
+  color: #00c853;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+
+.ai-baslik {
+  font-size: clamp(32px, 4vw, 52px);
+  color: #004d26;
+  font-weight: 800;
+  margin: 18px 0;
+  line-height: 1.1;
+}
+
+.ai-ana-aciklama {
+  font-size: clamp(15px, 1.4vw, 18px);
+  color: #64748b;
+  line-height: 1.7;
+  margin-bottom: 45px;
+  max-width: 650px;
+}
+
+.ai-ozellik-listesi {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.ai-madde {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.ai-madde-ikon {
+  min-width: 55px;
+  height: 55px;
+  background: #f0fdf4;
+  color: #00c853;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.ai-madde-icerik h3 {
+  font-size: clamp(17px, 2vw, 20px);
+  color: #004d26;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.ai-madde-icerik p {
+  font-size: clamp(14px, 1.3vw, 15px);
+  color: #64748b;
+  line-height: 1.6;
+}
+
+
+@media (max-width: 1200px) {
+  .kaktusai-konteynir {
+    gap: 60px;
+  }
+}
+
+@media (max-width: 992px) {
+  .kaktusai-konteynir {
+    grid-template-columns: 1fr;
+  }
+
+  .kaktusai-gorsel-taraf {
+    order: 2;
+  }
+
+  .kaktusai-metin-taraf {
+    order: 1;
+  }
+
+  .ai-ana-aciklama {
+    max-width: 100%;
+  }
+
+  .ai-hareketli-kart {
+    right: 20px;
+    bottom: 20px;
+    font-size: 13px;
+    padding: 12px 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .kaktusai-alani {
+    padding: 70px 0;
+  }
+
+  .kaktusai-konteynir {
+    padding: 0 20px;
+    gap: 45px;
+  }
+
+  .ai-gorsel-cerceve {
+    border-radius: 24px;
+  }
+
+  .ai-hareketli-kart {
+    position: static;
+    margin-top: 12px;
+    display: inline-block;
+    animation: none;
+  }
+
+  .ai-madde {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .ai-madde-ikon {
+    width: 48px;
+    height: 48px;
+    font-size: 22px;
+  }
+
+  .ai-ozellik-listesi {
+    gap: 26px;
+  }
+}
+
+@media (max-width: 400px) {
+  .ai-baslik {
+    line-height: 1.15;
+  }
+
+  .ai-ust-etiket {
+    font-size: 12px;
+  }
+}

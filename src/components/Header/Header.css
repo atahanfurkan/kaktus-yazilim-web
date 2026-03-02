@@ -1,0 +1,220 @@
+.ust-menu-sarma {
+  background: #fff;
+  width: 100%;
+  border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.menu-konteynir {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 10px 32px;
+}
+
+.site-logo {
+  height: 55px;
+}
+
+.mobil-menu-ikonu {
+  display: none;
+  font-size: 28px;
+  color: #064e3b;
+  cursor: pointer;
+  z-index: 1101;
+}
+
+.navigasyon-menusu ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigasyon-menusu li {
+  position: relative;
+}
+
+.menu-linki {
+  text-decoration: none;
+  color: #064e3b;
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.ok-ikonu {
+  transition: 0.3s;
+}
+
+.acilabilir-menu:hover .ok-ikonu {
+  transform: rotate(180deg);
+}
+
+.alt-menu, .mega-menu {
+  position: absolute;
+  top: 100%;
+  background: #fff;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  border-top: 3px solid #064e3b;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: 0.25s;
+  z-index: 1050;
+}
+
+.acilabilir-menu:hover > .alt-menu,
+.acilabilir-menu:hover > .mega-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.alt-menu.dikey-liste {
+  min-width: 240px;
+}
+
+.mega-menu {
+  width: 1000px;
+  left: -400px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 25px;
+  gap: 20px;
+}
+
+.mega-kolon h4 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #6b7280;
+  text-transform: uppercase;
+}
+
+.alt-menu-linki, .alt-menu-linki-a {
+  display: block;
+  padding: 10px 14px;
+  text-decoration: none;
+  color: #2d4e2c;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.alt-menu-linki:hover, .alt-menu-linki-a:hover {
+  background: #f0fdf4;
+  padding-left: 20px;
+}
+
+.buton-alani {
+  display: flex;
+  gap: 12px;
+}
+
+.iletisim-butonu, .teklif-butonu {
+  border: none;
+  padding: 10px 22px;
+  font-weight: 700;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.iletisim-butonu {
+  background: #064e3b;
+  color: #fff;
+}
+
+.teklif-butonu {
+  background: #fbbf24;
+}
+
+
+@media (max-width: 1024px) {
+
+  .mobil-menu-ikonu {
+    display: block;
+  }
+
+  .buton-alani {
+    display: none;
+  }
+
+  .navigasyon-menusu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 320px;
+    height: 100vh;
+    background: #fff;
+    padding: 90px 20px;
+    transition: 0.4s ease;
+    box-shadow: -5px 0 25px rgba(0,0,0,0.1);
+    z-index: 1090;
+    overflow-y: auto;
+  }
+
+  .navigasyon-menusu.mobil-aktif {
+    right: 0;
+  }
+
+  .navigasyon-menusu ul {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .navigasyon-menusu li {
+    border-bottom: 1px solid #f1f5f9;
+  }
+
+  .menu-linki {
+    padding: 14px 0;
+    justify-content: space-between;
+  }
+
+  .alt-menu, .mega-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    border: none;
+    display: none;
+    background: #f8fafc;
+    padding-left: 10px;
+  }
+
+  .acilabilir-menu:hover > .alt-menu,
+  .acilabilir-menu:hover > .mega-menu {
+    display: block;
+  }
+
+  .mega-menu {
+    grid-template-columns: 1fr;
+  }
+
+  .mobil-cta {
+    margin-top: 20px;
+  }
+
+  .mobil-cta .teklif-butonu {
+    width: 100%;
+    padding: 14px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-logo {
+    height: 45px;
+  }
+  .navigasyon-menusu {
+    width: 85%;
+  }
+}

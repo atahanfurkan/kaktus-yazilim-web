@@ -1,0 +1,176 @@
+.yorumlar-alani {
+  width: 100%;
+  padding: 120px 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.yorumlar-konteynir {
+  width: 94%;
+  max-width: 1700px;
+  padding: 0 40px;
+}
+
+.yorum-ust-baslik {
+  margin-bottom: 80px;
+  text-align: left;
+}
+
+.yorum-dev-baslik {
+  font-size: 56px;
+  color: #004d26;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 25px;
+}
+
+.yesil-vurgu {
+  color: #00c853;
+}
+
+.yorum-spot {
+  font-size: 19px;
+  color: #64748b;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+.yorum-kart-izgarasi {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.yorum-karti {
+  background: #f8fafc;
+  padding: 40px;
+  border-radius: 30px;
+  border: 1px solid #f1f5f9;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.yorum-karti:hover {
+  background: #ffffff;
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0, 77, 38, 0.08);
+  border-color: #dcfce7;
+}
+
+.yorum-ikon-sarici {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.quote-ikon {
+  font-size: 30px;
+  color: #00c853;
+  opacity: 0.3;
+}
+
+.yildiz-grubu {
+  color: #fbbf24;
+  display: flex;
+  gap: 2px;
+}
+
+.yorum-metni {
+  font-size: 17px;
+  color: #475569;
+  line-height: 1.8;
+  font-style: italic;
+  margin-bottom: 30px;
+  flex-grow: 1;
+}
+
+.yorum-alt-bilgi {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 20px;
+}
+
+.avatar-gecici {
+  width: 45px;
+  height: 45px;
+  background: #004d26;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.musteri-ismi {
+  font-size: 17px;
+  color: #0f172a;
+  font-weight: 800;
+  margin: 0;
+}
+
+.musteri-rol {
+  font-size: 14px;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.yorum-buton-alani {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.google-yorum-butonu {
+  background-color: #0a5228;
+  color: #ffffff;
+  padding: 18px 45px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 10px 25px rgba(0, 200, 83, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.google-yorum-butonu:hover {
+  background-color: #076336;
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 77, 38, 0.25);
+}
+
+.google-yorum-butonu:active {
+  transform: scale(0.98);
+}
+
+
+@media (max-width: 1400px) {
+  .yorum-kart-izgarasi { grid-template-columns: repeat(2, 1fr); }
+  .yorum-dev-baslik { font-size: 42px; }
+}
+
+@media (max-width: 992px) {
+  .yorum-kart-izgarasi { grid-template-columns: 1fr; gap: 25px; }
+  .yorum-dev-baslik { font-size: 36px; text-align: center; }
+  .yorum-spot { text-align: center; }
+  .yorum-alt-bilgi { justify-content: center; }
+}
+
+@media (max-width: 480px) {
+  .yorum-dev-baslik { font-size: 28px; }
+  .yorum-metni { font-size: 15px; }
+  .musteri-ismi { font-size: 15px; }
+  .musteri-rol { font-size: 13px; }
+  .google-yorum-butonu { width: 100%; padding: 15px; font-size: 16px; }
+}

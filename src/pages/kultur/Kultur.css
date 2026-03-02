@@ -1,0 +1,186 @@
+.kultur-alani {
+  width: 100%;
+  padding: 100px 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.kultur-konteynir {
+  width: 90%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+.kultur-sol {
+  position: sticky;
+  top: 120px;
+}
+
+.kultur-etiket {
+  color: #00c853;
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+}
+
+.kultur-baslik {
+  font-size: 42px;
+  color: #004d26;
+  font-weight: 800;
+  margin: 20px 0;
+  line-height: 1.1;
+}
+
+.kultur-aciklama {
+  font-size: 17px;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+.kultur-buton {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #004d26;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.kultur-buton:hover {
+  transform: translateX(5px);
+  color: #00c853;
+}
+
+.kultur-izgara {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.kultur-kart {
+  background: #f8fafc;
+  padding: 35px;
+  border-radius: 24px;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.kultur-kart:hover {
+  background: #ffffff;
+  border-color: #e2e8f0;
+  box-shadow: 0 20px 40px rgba(0, 77, 38, 0.05);
+  transform: translateY(-5px);
+}
+
+.kultur-ikon {
+  font-size: 28px;
+  color: #00c853;
+  margin-bottom: 20px;
+}
+
+.kultur-kart h3 {
+  font-size: 20px;
+  color: #004d26;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.kultur-kart p {
+  font-size: 14.5px;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .kultur-konteynir {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .kultur-sol {
+    position: static;
+    text-align: center;
+  }
+
+  .kultur-baslik {
+    font-size: 36px;
+  }
+
+  .kultur-aciklama {
+    font-size: 16px;
+  }
+
+  .kultur-izgara {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .kultur-kart {
+    padding: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .kultur-alani {
+    padding: 70px 0;
+  }
+
+  .kultur-baslik {
+    font-size: 30px;
+  }
+
+  .kultur-aciklama {
+    font-size: 15px;
+  }
+
+  .kultur-izgara {
+    grid-template-columns: 1fr;
+  }
+
+  .kultur-kart {
+    padding: 26px;
+  }
+
+  .kultur-kart h3 {
+    font-size: 18px;
+  }
+
+  .kultur-kart p {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .kultur-konteynir {
+    width: 92%;
+  }
+
+  .kultur-baslik {
+    font-size: 26px;
+  }
+
+  .kultur-etiket {
+    font-size: 11px;
+  }
+
+  .kultur-buton {
+    font-size: 14px;
+  }
+
+  .kultur-kart {
+    padding: 22px;
+    border-radius: 18px;
+  }
+
+  .kultur-ikon {
+    font-size: 24px;
+  }
+}
